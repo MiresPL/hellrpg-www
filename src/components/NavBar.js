@@ -1,5 +1,9 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
+import profile from "../images/profile.png";
+import chest from "../images/chest.png";
+import enderchest from "../images/enderchest.png";
+import nametag from "../images/nametag.png";
 
 export default function NavBar({playerName}) {
     const classNameDefault = "NavBarBox-";
@@ -12,8 +16,12 @@ export default function NavBar({playerName}) {
 
         if (arrow.innerHTML === "▼") {
             arrow.innerHTML = "▲";
+            document.getElementsByClassName(classNameDefault + "profileButton-menuWrapper2")[0].style.border = "1px solid #1A91FF"
+            document.getElementsByClassName(classNameDefault + "profileButton-menuWrapper2")[0].style.padding = "2vh 2vw 2vh 2vw"
         } else {
             arrow.innerHTML = "▼";
+            document.getElementsByClassName(classNameDefault + "profileButton-menuWrapper2")[0].style.border = "none"
+            document.getElementsByClassName(classNameDefault + "profileButton-menuWrapper2")[0].style.padding = "0"
         }
 
         for (i = 0; i < coll.length; i++) {
@@ -55,10 +63,32 @@ export default function NavBar({playerName}) {
             </div>
         </div>
         <div className={classNameDefault + "profileButton-menuWrapper"}>
-            <div className={classNameDefault + "profileButton-menu"}>profil</div>
-            <div className={classNameDefault + "profileButton-menu"}>enderchest</div>
-            <div className={classNameDefault + "profileButton-menu"}>ekwipunek</div>
-            <div className={classNameDefault + "profileButton-menu"}>vouchery</div>
+            <div className={classNameDefault + "profileButton-menuWrapper2"}>
+                <div className={classNameDefault + "profileButton-menu"}>
+                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
+                        <img src={profile} alt={"profil"}></img>
+                        profil
+                    </div>
+                </div>
+                <div className={classNameDefault + "profileButton-menu"}>
+                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
+                        <img src={enderchest} alt={"enderchest"}></img>
+                        enderchest
+                    </div>
+                </div>
+                <div className={classNameDefault + "profileButton-menu"}>
+                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
+                        <img src={chest} alt={"eq"}></img>
+                        ekwipunek
+                    </div>
+                </div>
+                <div className={classNameDefault + "profileButton-menu"}>
+                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
+                        <img src={nametag} alt={"vouchery"}></img>
+                        vouchery
+                    </div>
+                </div>
+            </div>
         </div>
 
     </>);

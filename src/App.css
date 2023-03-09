@@ -1,3 +1,11 @@
+:root {
+    --darkerGray: #23272A;
+    --mainOrange: #D84F00;
+    --complimentaryBlue: #1A91FF;
+    --backgroundGray: #2C2F33;
+}
+
+
 body {
     background: #2C2F33;
 }
@@ -100,3 +108,89 @@ body {
     display: none;
     color: red;
 }
+
+.NavBarBox-profileButton-menuWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.NavBarBox-profileButton-menuWrapper2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkerGray);
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+
+.NavBarBox-profileButton-menu-elementWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 1vh 1vw 1vh 1vw;
+    border: 2px solid var(--darkerGray);
+}
+
+.NavBarBox-profileButton-menu-elementWrapper > img {
+    height: 32px;
+    width: 32px;
+    border: 2px solid var(--mainOrange);
+}
+
+.NavBarBox-profileButton-menu-elementWrapper:hover {
+    background-color: var(--backgroundGray);
+    color: var(--complimentaryBlue);
+    border: 2px solid var(--complimentaryBlue);
+    border-radius: 15px;
+}
+
+.NavBarBox-profileButton-menu-elementWrapper:hover > img {
+    height: 32px;
+    width: 32px;
+    border: 2px solid var(--complimentaryBlue);
+}
+
+footer {
+    color: var(--mainOrange);
+    background-color: var(--darkerGray);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 65vw;
+    padding: 2vh 2vw 2vh 2vw;
+    border-top: 2px solid #1A91FF;
+    box-shadow: inset 0 7px 9px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+.Footer-copyright {
+    right: 0;
+}
+
+.Footer-otherWrapper {
+    display: flex;
+    gap: 2vw;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+}
+
