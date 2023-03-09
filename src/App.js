@@ -1,32 +1,14 @@
 import React from 'react';
 import "./App.css";
+import NavBar from "./NavBar.js";
 
 function Main() {
     return (
         <div className="Main">
-            <NavBar />
+            <NavBar playerName={"Mires_"} />
         </div>
     );
 
-}
-
-function NavBar() {
-    return (
-        <div className="NavBar">
-            <NavBarBox
-                text={"HELLRPG.PL"}
-                classNameId={"serverName"}
-            />
-        </div>
-    );
-}
-
-function NavBarBox({text, classNameId}) {
-    return (
-        <div className={"NavBarBox-" + classNameId}>
-            {text}
-        </div>
-    );
 }
 
 
