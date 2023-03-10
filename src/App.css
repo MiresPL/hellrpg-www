@@ -10,6 +10,8 @@ body {
     background: #2C2F33;
 }
 
+/* ------------------------------------ NAV BAR GORA ------------------------------------ */
+
 .NavBar {
     /* Auto layout */
 
@@ -34,6 +36,7 @@ body {
 }
 
 .NavBarBox-serverName {
+    cursor: pointer;
     color: #D84F00;
     font-size: 28px;
     font-weight: bold;
@@ -63,6 +66,8 @@ body {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.0125);
     color: #1A91FF;
 }
+
+/* ------------------------------------ NAV BAR PROFIL ------------------------------------ */
 
 .NavBarBox-profile {
     color: #1A91FF;
@@ -106,13 +111,14 @@ body {
 
 .NavBarBox-profileButton-menu {
     display: none;
-    color: red;
 }
 
 .NavBarBox-profileButton-menuWrapper {
     display: flex;
     flex-direction: row-reverse;
 }
+
+/* ------------------------------------ NAV BAR MENU DISPLAY ------------------------------------ */
 
 .NavBarBox-profileButton-menuWrapper2 {
     display: flex;
@@ -133,6 +139,7 @@ body {
     gap: 0.5vw;
     padding: 1vh 1vw 1vh 1vw;
     border: 2px solid var(--darkerGray);
+    color: var(--mainOrange);
 }
 
 .NavBarBox-profileButton-menu-elementWrapper > img {
@@ -153,6 +160,25 @@ body {
     width: 32px;
     border: 2px solid var(--complimentaryBlue);
 }
+
+/* ------------------------------------ BANNER ------------------------------------ */
+
+.Banner {
+    background: url("./images/banner.png") no-repeat;
+    height: 78vh;
+    width: 100vw;
+    background-size: cover;
+
+    /* Inside auto layout */
+}
+
+/* ------------------------------------ STOPKA ------------------------------------ */
+.MainPage {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------ STOPKA ------------------------------------ */
 
 footer {
     color: var(--mainOrange);
@@ -186,11 +212,29 @@ footer {
 
 .Footer-otherWrapper {
     display: flex;
-    gap: 2vw;
+    top: 2vh;
+    gap: 1.5vw;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.06em;
     text-transform: capitalize;
+    align-items: center;
+}
+
+.Footer-cookies {
+    cursor: pointer;
+}
+
+.Footer-cookies:hover {
+    color: var(--complimentaryBlue);
+}
+
+.Footer-regulamin {
+    cursor: pointer;
+}
+
+.Footer-regulamin:hover {
+    color: var(--complimentaryBlue);
 }
 

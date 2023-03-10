@@ -12,6 +12,7 @@ export default function Footer() {
                     <div className={"Footer-regulamin"}>
                         Regulamin
                     </div>
+                    |
                     <div className={"Footer-cookies"}>
                         Polityka Cookies
                     </div>
