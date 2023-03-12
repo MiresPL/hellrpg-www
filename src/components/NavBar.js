@@ -1,9 +1,5 @@
 import React from "react";
 import "../App.css";
-import profile from "../images/profile.png";
-import chest from "../images/chest.png";
-import enderchest from "../images/enderchest.png";
-import nametag from "../images/nametag.png";
 
 export default function NavBar({playerName}) {
     const classNameDefault = "NavBarBox-";
@@ -59,34 +55,6 @@ export default function NavBar({playerName}) {
                     <div className={"button-arrow"}>▼</div>
                     <div>{playerName}</div>
                     <img src={"https://minotar.net/helm/" + playerName + "/32"} alt={"Brak Obrazka"}></img>
-                </div>
-            </div>
-        </div>
-        <div className={classNameDefault + "profileButton-menuWrapper"}>
-            <div className={classNameDefault + "profileButton-menuWrapper2"}>
-                <div className={classNameDefault + "profileButton-menu"}>
-                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
-                        <img src={profile} alt={"profil"}></img>
-                        profil
-                    </div>
-                </div>
-                <div className={classNameDefault + "profileButton-menu"}>
-                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
-                        <img src={enderchest} alt={"enderchest"}></img>
-                        enderchest
-                    </div>
-                </div>
-                <div className={classNameDefault + "profileButton-menu"}>
-                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
-                        <img src={chest} alt={"eq"}></img>
-                        ekwipunek
-                    </div>
-                </div>
-                <div className={classNameDefault + "profileButton-menu"}>
-                    <div className={classNameDefault + "profileButton-menu-elementWrapper"}>
-                        <img src={nametag} alt={"vouchery"}></img>
-                        vouchery
-                    </div>
                 </div>
             </div>
         </div>
